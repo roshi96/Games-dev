@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+
+echo "Welcome to my game!"
+
+g++ -c -std=c++11 src/*.cpp
+g++ -o Star *.o -lSDL2 -lSDL2_image
+./Star
